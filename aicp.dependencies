@@ -5,11 +5,6 @@
     "branch": "8.1"
   },
   {
-    "repository": "AICP/device_oppo_common",
-    "target_path": "device/oppo/common",
-    "branch": "o8.1"
-  },
-  {
     "repository": "AICP/kernel_oneplus_sdm845",
     "target_path": "kernel/oneplus/sdm845",
     "branch": "o8.1-flash"
