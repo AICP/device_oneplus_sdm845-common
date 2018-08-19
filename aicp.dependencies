@@ -2,7 +2,7 @@
   {
     "repository": "crdroidandroid/proprietary_vendor_oneplus",
     "target_path": "vendor/oneplus",
-    "branch": "lineage-15.1"
+    "branch": "8.1"
   },
   {
     "repository": "AICP/kernel_oneplus_sdm845",
