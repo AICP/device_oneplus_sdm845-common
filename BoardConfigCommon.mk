@@ -35,9 +35,6 @@ TARGET_2ND_CPU_VARIANT := cortex-a9
 
 TARGET_USES_64_BIT_BINDER := true
 
-# Use Snapdragon LLVM, if available
-TARGET_USE_SDCLANG := true
-
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sdm845
 TARGET_NO_BOOTLOADER := true
@@ -53,10 +50,6 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/oneplus/sdm845
 TARGET_KERNEL_CONFIG := enchilada_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
-TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := 7.0.2
-KBUILD_COMPILER_STRING := Android (4751641 based on r328903) clang version 7.0.2 (based on LLVM 7.0.2svn)
-export KBUILD_COMPILER_STRING
 
 # Platform
 # TARGET_BOARD_PLATFORM := sdm845
