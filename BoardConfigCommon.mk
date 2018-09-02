@@ -119,7 +119,12 @@ BOARD_SUPPRESS_EMMC_WIPE := true
 
 # Root
 BOARD_ROOT_EXTRA_FOLDERS := odm op1 op2
-BOARD_ROOT_EXTRA_SYMLINKS := /vendor/lib/dsp:/dsp /vendor/firmware:/firmware /vendor/bt_firmware:/bt_firmware /mnt/vendor/persist:/persist
+BOARD_ROOT_EXTRA_SYMLINKS := \
+    /mnt/vendor/persist:/persist \
+    /vendor/bt_firmware:/bt_firmware \
+    /vendor/dsp:/dsp \
+    /vendor/firmware_mnt:/firmware
+>>>>>>> 7bd8d2a... sdm845-common: Update extra rootdir folders/symlinks for P
 
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
