@@ -45,6 +45,8 @@ on boot
     chown system system /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/display_mode
     chown system system /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/hbm
 
+    mkdir /persist/battery 0770 system system
+
     setprop vendor.camera.aux.packagelist com.oneplus.camera
     setprop camera.hal1.packagelist "none"
 
