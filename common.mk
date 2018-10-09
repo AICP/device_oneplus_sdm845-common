@@ -69,6 +69,10 @@ PRODUCT_PACKAGES += \
     init.jamesdsp.sh \
     init.performance.rc
 
+# Camera
+PRODUCT_PACKAGES += \
+    CameraPackage
+
 # Display
 PRODUCT_PACKAGES += \
     libvulkan \
