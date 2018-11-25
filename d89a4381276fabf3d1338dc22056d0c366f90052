@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5fc80def_fa39500c",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2018-11-25T21:45:26Z",
+      "side": 1,
+      "message": "this line should be in enchilada repo, not common...",
+      "range": {
+        "startLine": 51,
+        "startChar": 0,
+        "endLine": 51,
+        "endChar": 48
+      },
+      "revId": "d89a4381276fabf3d1338dc22056d0c366f90052",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": false
+    }
+  ]
+}
