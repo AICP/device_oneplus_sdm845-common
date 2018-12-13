@@ -11,6 +11,8 @@ on init
     mount none /system/etc/WCNSS_qcom_cfg.ini /vendor/etc/wifi/WCNSS_qcom_cfg.ini bind
     mount none /dev/null /vendor/etc/init/android.hardware.health@2.0-service.rc bind
 
+    start jamesdsp
+
 on boot
     # Fingerprint
     chown system system /sys/devices/platform/soc/soc:goodix_fp/proximity_state
@@ -69,4 +71,9 @@ service dashd /sbin/dashd
     group root system
 
 service factory-hal-1-0 /system/bin/true
+    disabled
+
+service jamesdsp /system/bin/init.jamesdsp.sh
+    user root
+    oneshot
     disabled
