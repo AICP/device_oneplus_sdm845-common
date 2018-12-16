@@ -124,7 +124,7 @@ PRODUCT_PACKAGES += \
 
 # Offmode charging
 PRODUCT_PACKAGES += \
-    chargeonlymode
+    charger
     
 # Pocket mode
 PRODUCT_PACKAGES += \
