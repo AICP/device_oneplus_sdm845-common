@@ -33,11 +33,10 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <stdlib.h>
-#include <string.h>
-#include <sys/stat.h>
-#include <sys/types.h>
+#include <unistd.h>
 
-#define LOG_TAG "QCOM PowerHAL"
+#define LOG_TAG "QTI PowerHAL"
+#include <utils/Log.h>
 #include <hardware/hardware.h>
 #include <hardware/power.h>
 #include <utils/Log.h>
@@ -48,6 +47,9 @@
 #include "power-common.h"
 #include "utils.h"
 
+#define LOG_TAG "Omni PowerHAL"
+#define DOUBLE_TAP_FILE "/proc/touchpanel/double_tap_enable"
+
 static int saved_dcvs_cpu0_slack_max = -1;
 static int saved_dcvs_cpu0_slack_min = -1;
 static int saved_mpdecision_slack_max = -1;
@@ -57,14 +59,23 @@ static int slack_node_rw_failed = 0;
 static int display_hint_sent;
 int display_boost;
 
-static int power_device_open(const hw_module_t* module, const char* name, hw_device_t** device);
+void set_feature(struct power_module __unused *module, feature_t feature, int state) {
+    if (feature == POWER_FEATURE_DOUBLE_TAP_TO_WAKE) {
+        ALOGI("%s POWER_FEATURE_DOUBLE_TAP_TO_WAKE %s", __func__, (state ? "ON" : "OFF"));
+        sysfs_write(DOUBLE_TAP_FILE, state ? "1" : "0");
+    }
+}
+
+static int power_device_open(const hw_module_t* module, const char* name,
+        hw_device_t** device);
 
 static struct hw_module_methods_t power_module_methods = {
     .open = power_device_open,
 };
 
-static void power_init(struct power_module* module) {
-    ALOGI("QCOM power HAL initing.");
+static void power_init(struct power_module *module)
+{
+    ALOGI("QTI power HAL initing.");
 
     int fd;
     char buf[10] = {0};
@@ -442,17 +453,9 @@ void set_interactive(struct power_module* module, int on) {
     saved_interactive_mode = !!on;
 }
 
-void set_feature(struct power_module* module, feature_t feature, int state) {
-    switch (feature) {
-        case POWER_FEATURE_DOUBLE_TAP_TO_WAKE:
-            sysfs_write("/proc/touchpanel/double_tap_enable", state ? "1" : "0");
-            break;
-        default:
-            break;
-    }
-}
-
-static int power_device_open(const hw_module_t* module, const char* name, hw_device_t** device) {
+static int power_device_open(const hw_module_t* module, const char* name,
+        hw_device_t** device)
+{
     int status = -EINVAL;
     if (module && name && device) {
         if (!strcmp(name, POWER_HARDWARE_MODULE_ID)) {
@@ -488,16 +491,15 @@ static int power_device_open(const hw_module_t* module, const char* name, hw_dev
 }
 
 struct power_module HAL_MODULE_INFO_SYM = {
-    .common =
-        {
-            .tag = HARDWARE_MODULE_TAG,
-            .module_api_version = POWER_MODULE_API_VERSION_0_3,
-            .hal_api_version = HARDWARE_HAL_API_VERSION,
-            .id = POWER_HARDWARE_MODULE_ID,
-            .name = "QCOM Power HAL",
-            .author = "Qualcomm",
-            .methods = &power_module_methods,
-        },
+    .common = {
+        .tag = HARDWARE_MODULE_TAG,
+        .module_api_version = POWER_MODULE_API_VERSION_0_2,
+        .hal_api_version = HARDWARE_HAL_API_VERSION,
+        .id = POWER_HARDWARE_MODULE_ID,
+        .name = "QTI Power HAL",
+        .author = "QTI",
+        .methods = &power_module_methods,
+    },
 
     .init = power_init,
     .powerHint = power_hint,
