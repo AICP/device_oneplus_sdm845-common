@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "11b55827_1ad8f6c7",
+        "filename": "system_prop.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 187
+      },
+      "writtenOn": "2019-01-06T19:58:23Z",
+      "side": 1,
+      "message": "you missed \\ there",
+      "revId": "905503ca25f64adfe769d719db6b396a3f60f07f",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": true
+    }
+  ]
+}
