@@ -16,6 +16,24 @@
       "revId": "905503ca25f64adfe769d719db6b396a3f60f07f",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "683eed8d_d1641e5b",
+        "filename": "system_prop.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2019-01-08T06:18:03Z",
+      "side": 1,
+      "message": "Right. Ty :)",
+      "parentUuid": "11b55827_1ad8f6c7",
+      "revId": "905503ca25f64adfe769d719db6b396a3f60f07f",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": true
     }
   ]
 }
