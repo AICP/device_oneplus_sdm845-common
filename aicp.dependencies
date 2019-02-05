@@ -13,5 +13,10 @@
     "repository":  "LineageOS/android_packages_resources_devicesettings",
     "target_path": "packages/resources/devicesettings",
     "branch":      "lineage-16.0"
+  },
+  {
+    "repository":  "AICP/device_oppo_common",
+    "target_path": "device/oppo/common",
+    "branch":      "p9.0"
   }
 ]
