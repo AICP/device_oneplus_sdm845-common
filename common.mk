@@ -170,3 +170,6 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += android.hardware.health@2.0-service.oneplus6
 DEVICE_FRAMEWORK_MANIFEST_FILE += \
     system/libhidl/vintfdata/manifest_healthd_exclude.xml
+
+# Inherit from oppo-common
+$(call inherit-product, device/oppo/common/common.mk)
