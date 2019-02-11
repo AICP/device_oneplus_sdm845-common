@@ -19,9 +19,8 @@ package org.lineageos.hardware;
 
 import android.util.Log;
 
-import lineageos.hardware.TouchscreenGesture;
-
-import org.lineageos.internal.util.FileUtils;
+import com.android.internal.util.aicp.TouchscreenGesture;
+import com.android.internal.util.aicp.FileUtils;
 
 /**
  * Touchscreen gestures API
