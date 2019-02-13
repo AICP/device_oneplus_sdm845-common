@@ -147,5 +147,8 @@ BOARD_BUILD_DISABLED_VBMETAIMAGE := true
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
 
+#Custom WCNSS Flag
+TARGET_DISABLE_WCNSS_CONFIG_COPY := true
+
 # Inherit from the proprietary version
 -include vendor/oneplus/sdm845-common/BoardConfigVendor.mk
