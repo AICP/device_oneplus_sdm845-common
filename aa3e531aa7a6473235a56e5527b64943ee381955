@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "284c6d7d_364423dc",
+        "filename": "common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2019-03-07T01:45:02Z",
+      "side": 1,
+      "message": "Should be +\u003d",
+      "range": {
+        "startLine": 116,
+        "startChar": 17,
+        "endLine": 116,
+        "endChar": 19
+      },
+      "revId": "aa3e531aa7a6473235a56e5527b64943ee381955",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": false
+    }
+  ]
+}
