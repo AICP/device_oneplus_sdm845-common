@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e06744c2_41745bf6",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2019-03-26T08:05:51Z",
+      "side": 1,
+      "message": "Isn\u0027t it redundant after https://github.com/AICP/vendor_aicp/commit/884a544bf7d4e4df002224dc0c253d635970b65c",
+      "revId": "c4501225c8338fa8e02012c7869950c9aadd9021",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": true
+    }
+  ]
+}
