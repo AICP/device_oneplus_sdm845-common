@@ -136,6 +136,9 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += device/qcom/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += device/qcom/sepolicy/public
 
+# Use Magisk instead su
+WITH_SU := false
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
