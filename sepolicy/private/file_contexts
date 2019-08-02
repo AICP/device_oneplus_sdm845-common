@@ -37,4 +37,4 @@
 /system/bin/init.jamesdsp.sh   u:object_r:jamesdsp_exec:s0
 
 # Custom Equilizer (JamesDSP)
-/system/lib/soundfx/libjamesdsp\.so    u:object_r:vendor_file:s0
+/system/lib/soundfx/libjamesdsp\.so    u:object_r:jamesdsp_lib:s0
