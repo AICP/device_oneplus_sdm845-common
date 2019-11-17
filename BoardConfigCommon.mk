@@ -134,7 +134,8 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
 
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
     device/qcom/sepolicy/generic/public \
-    device/qcom/sepolicy/qva/public
+    device/qcom/sepolicy/qva/public \
+    device/aicp/sepolicy/qcom/system
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
