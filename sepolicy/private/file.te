@@ -18,3 +18,6 @@ type sysfs_oem, sysfs_type, fs_type;
 
 # data
 type display_misc_file, file_type, data_file_type, core_data_file_type;
+
+# device info
+type sysfs_device_info, sysfs_type, fs_type;
