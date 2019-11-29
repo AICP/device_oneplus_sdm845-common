@@ -1,0 +1,2 @@
+# Device info
+allow platform_app sysfs_device_info:file { r_file_perms };
