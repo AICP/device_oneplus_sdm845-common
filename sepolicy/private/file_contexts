@@ -40,3 +40,9 @@
 # Custom Equilizer (JamesDSP)
 /vendor/lib/soundfx/libjamesdsp\.so    u:object_r:vendor_file:s0
 /vendor/lib64/soundfx/libjamesdsp\.so    u:object_r:vendor_file:s0
+
+# Vibration nodes
+/sys/class/leds/vibrator/vmax_mv_strong		u:object_r:sysfs_vibrator_aicp:s0
+/sys/class/leds/vibrator/vmax_mv_call		u:object_r:sysfs_vibrator_aicp:s0
+/sys/class/leds/vibrator/vmax_mv_user		u:object_r:sysfs_vibrator_aicp:s0
+/sys/class/leds/vibrator/vmax_override		u:object_r:sysfs_vibrator_aicp:s0

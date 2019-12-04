@@ -1,0 +1,5 @@
+allow platform_app sysfs_dm:file rw_file_perms;
+allow platform_app sysfs_dm:dir search;
+
+allow platform_app sysfs_vibrator_aicp:file rw_file_perms;
+allow platform_app sysfs_vibrator_aicp:dir search;

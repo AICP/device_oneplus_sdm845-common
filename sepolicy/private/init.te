@@ -8,4 +8,5 @@ allow init vendor_configs_file:dir mounton;
 allow init {
     sysfs_fpc_proximity
     sysfs_graphics
+    sysfs_vibrator_aicp
 }:file { open read setattr };
