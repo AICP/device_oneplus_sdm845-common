@@ -17,24 +17,24 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <com.aicp.gear.preference.SystemSettingSwitchPreference
+    <PreferenceCategory
         android:key="pulse_ambient_light"
-        android:defaultValue="false"
-        android:title="@string/pulse_ambient_light_title" />
+        android:title="@string/pulse_ambient_light_enable_title">
 
-    <com.aicp.gear.preference.SystemSettingColorPickerPreference
-        android:key="pulse_ambient_light_color"
-        android:title="@string/pulse_ambient_light_color_title"
-        android:defaultValue="0xFF3980FF"
-        android:dependency="pulse_ambient_light" />
+        <com.aicp.gear.preference.SystemSettingSwitchPreference
+            android:key="pulse_ambient_light"
+            android:defaultValue="false"
+            android:title="@string/pulse_ambient_light_title"
+            android:summary="@string/pulse_ambient_light_summary"
+            android:icon="@drawable/ic_lighthouse" />
 
-    <SwitchPreference
-        android:key="always_on_display"
-        android:disableDependentsState="true"
-        android:title="@string/ambient_display_always_on_title"
-        android:summary="@string/ambient_display_always_on_summary"
-        android:persistent="false"
-        android:icon="@drawable/ic_eye" />
+        <com.aicp.gear.preference.SystemSettingColorPickerPreference
+            android:key="pulse_ambient_light_color"
+            android:title="@string/pulse_ambient_light_color_title"
+            android:defaultValue="0xFF3980FF"
+            android:dependency="pulse_ambient_light" />
+
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="pickup_sensor"
@@ -61,5 +61,13 @@
             android:icon="@drawable/ic_pocket" />
 
     </PreferenceCategory>
+
+    <SwitchPreference
+        android:key="always_on_display"
+        android:disableDependentsState="true"
+        android:title="@string/ambient_display_always_on_title"
+        android:summary="@string/ambient_display_always_on_summary"
+        android:persistent="false"
+        android:icon="@drawable/ic_eye" />
 
 </PreferenceScreen>
