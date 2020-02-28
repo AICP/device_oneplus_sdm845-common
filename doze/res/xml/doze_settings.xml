@@ -82,6 +82,15 @@
             android:defaultValue="3"
             android:dependency="pulse_ambient_light" />
 
+        <com.aicp.gear.preference.SystemSettingSeekBarPreference
+            android:key="pulse_ambient_light_repeat_count"
+            android:title="@string/pulse_ambient_light_repeat_count_title"
+            android:persistent="false"
+            android:defaultValue="0"
+            android:max="10"
+            settings:min="0"
+            android:dependency="pulse_ambient_light" />
+
         <com.aicp.gear.preference.SystemSettingSwitchPreference
             android:key="pulse_on_new_tracks"
             android:defaultValue="false"
