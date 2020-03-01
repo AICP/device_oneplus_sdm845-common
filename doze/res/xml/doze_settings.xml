@@ -86,6 +86,7 @@
         <com.aicp.gear.preference.SystemSettingSeekBarPreference
             android:key="pulse_ambient_light_repeat_count"
             android:title="@string/pulse_ambient_light_repeat_count_title"
+            android:summary="@string/pulse_ambient_light_repeat_count_summary"
             android:max="10"
             android:min="0"
             aicpextras:unitsLeft=""

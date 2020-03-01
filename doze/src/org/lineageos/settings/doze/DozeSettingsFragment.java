@@ -48,12 +48,14 @@ import net.margaritov.preference.colorpicker.ColorPickerPreference;
 public class DozeSettingsFragment extends PreferenceFragment implements OnPreferenceChangeListener,
         CompoundButton.OnCheckedChangeListener {
 
+    private static final String PULSE_AMBIENT_LIGHT_REPEAT_COUNT = "pulse_ambient_light_repeat_count";
     private static final String PULSE_AMBIENT_LIGHT_COLOR_MODE = "pulse_ambient_light_color_mode";
     private static final String PULSE_AMBIENT_LIGHT_COLOR = "pulse_ambient_light_color";
 
     private TextView mTextView;
     private View mSwitchBar;
 
+    private SystemSettingSeekBarPreference mEdgeLightRepeatCountPreference;
     private ColorPickerPreference mEdgeLightColorPref;
     private ListPreference mEdgeLightColorModePref;
 
@@ -103,6 +105,12 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
             proximitySensorCategory.setDependency(Utils.ALWAYS_ON_DISPLAY);
         }
 
+        mEdgeLightRepeatCountPreference = (SystemSettingSeekBarPreference) findPreference(PULSE_AMBIENT_LIGHT_REPEAT_COUNT);
+        mEdgeLightRepeatCountPreference.setOnPreferenceChangeListener(this);
+        int rCount = Settings.System.getInt(resolver,
+                Settings.System.PULSE_AMBIENT_LIGHT_REPEAT_COUNT, 0);
+        mEdgeLightRepeatCountPreference.setValue(rCount);
+
         mEdgeLightColorModePref = (ListPreference) findPreference(PULSE_AMBIENT_LIGHT_COLOR_MODE);
         mEdgeLightColorModePref.setOnPreferenceChangeListener(this);
         mEdgeLightColorPref = (ColorPickerPreference) findPreference(PULSE_AMBIENT_LIGHT_COLOR);
@@ -145,6 +153,13 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (Utils.ALWAYS_ON_DISPLAY.equals(preference.getKey())) {
             Utils.enableAlwaysOn(getActivity(), (Boolean) newValue);
+        }
+
+        if (preference == mEdgeLightRepeatCountPreference) {
+            int value = (Integer) newValue;
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.PULSE_AMBIENT_LIGHT_REPEAT_COUNT, value);
+            return true;
         }
 
         if (mEdgeLightColorModePref.equals(preference)) {
