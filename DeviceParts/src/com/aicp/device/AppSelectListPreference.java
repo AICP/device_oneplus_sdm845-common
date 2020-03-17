@@ -66,6 +66,7 @@ public class AppSelectListPreference extends CustomDialogPreference {
     public static final String NAVIGATE_BACK_ENTRY = "navigate_back";
     public static final String NAVIGATE_HOME_ENTRY = "navigate_home";
     public static final String NAVIGATE_RECENT_ENTRY = "navigate_recent";
+    public statis ginal String AMBIENT_DISPLAY_ENTRY = "ambient_display";
 
     private AppSelectListAdapter mAdapter;
     private Drawable mAppIconDrawable;
@@ -230,6 +231,10 @@ public class AppSelectListPreference extends CustomDialogPreference {
         PackageItem wakeItem = new PackageItem(getContext().getResources().getString(R.string.wake_entry),
                 R.drawable.ic_wakeup, WAKE_ENTRY);
         mInstalledPackages.add(0, wakeItem);
+
+	PackageItem ambientDisplay = new PackageItem(getContext().getResources().getString(R.string.ambient_display_entry),
+                R.drawable.ic_ambient_display, AMBIENT_DISPLAY_ENTRY);
+        mInstalledPackages.add(0, ambientDisplay);
 
         if (sIsOnePlus6) {
             PackageItem volumeUpItem = new PackageItem(
