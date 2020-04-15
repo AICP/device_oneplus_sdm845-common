@@ -33,3 +33,6 @@
 
 # Pocket Bridge
 /sys/kernel/pocket_judge/inpocket                               u:object_r:sysfs_inpocket:s0
+
+# Files in sysfs
+/sys/devices/platform/soc/soc:goodix_fp/proximity_state    u:object_r:sysfs_fpc_proximity:s0
