@@ -5,11 +5,6 @@
     "branch":      "q10.0"
   },
   {
-    "repository":  "AICP/proprietary_vendor_oneplus",
-    "target_path": "vendor/oneplus",
-    "branch":      "q10.0"
-  },
-  {
     "repository":  "AICP/packages_apps_PartsBin",
     "target_path": "packages/apps/PartsBin",
     "branch":      "q10.0"
