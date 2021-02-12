@@ -2,26 +2,21 @@
   {
     "repository":  "AICP/kernel_oneplus_sdm845",
     "target_path": "kernel/oneplus/sdm845",
-    "branch":      "r11.1"
   },
   {
     "repository":  "Claymore1297/proprietary_vendor_oneplus",
     "target_path": "vendor/oneplus",
-    "branch":      "r11.1"
   },
   {
     "repository":  "AICP/packages_apps_PartsBin",
     "target_path": "packages/apps/PartsBin",
-    "branch":      "r11.1"
   },
   {
     "repository":  "AICP/device_oneplus_settings",
     "target_path": "device/oneplus/settings",
-    "branch":      "r11.1"
   },
   {
     "repository":  "AICP/packages_resources_deviceparts",
     "target_path": "packages/resources/deviceparts",
-    "branch":      "r11.1"
   }
 ]
