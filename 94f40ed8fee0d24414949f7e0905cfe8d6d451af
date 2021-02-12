@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ea9d1867_ba361e42",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1375
+      },
+      "writtenOn": "2021-02-12T07:36:05Z",
+      "side": 1,
+      "message": "the complete topic is rebased on AICP q10.0 branches, so all should fit for op6t too.\nWill push kernel today later",
+      "revId": "94f40ed8fee0d24414949f7e0905cfe8d6d451af",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
