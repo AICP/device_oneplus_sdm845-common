@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c00bedce_f1a1066b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1393
+      },
+      "writtenOn": "2021-05-10T04:11:51Z",
+      "side": 1,
+      "message": "Whoopsies we broke the build - when submitting 109747, I believe we should have removed PartsBin as well.\n\nJenkins:\nfatal: duplicate path packages/apps/PartsBin in ***/aicp/r11.1/.repo/manifest.xml",
+      "revId": "37c05dcc0cc443bc89462b0e011602bf9afc88f3",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
