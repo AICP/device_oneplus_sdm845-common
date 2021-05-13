@@ -33,6 +33,23 @@
       "message": "commit fits. only question is why. we did this on op7 because, we have opsoundtuner. If we remove it (and I\u0027n not against this), we ship no equalizer. do we want this?",
       "revId": "8cfae67704bbf592890be25f82b1422028fe7447",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2b8c2c9c_8074665c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1393
+      },
+      "writtenOn": "2021-05-13T08:46:29Z",
+      "side": 1,
+      "message": "If AICP still shipped our old eq I would recommend we switch back to this, but as far as I know that\u0027s not an option.\n\nThe JamesDSP application does not function correctly, even the \"off\" switch is unable to prevent the app from providing a persistent notif.\n\nI propose if in the future the JamesDSP application receives some additional love to bring it up to a higher quality standard, we revisit this then.\n\nI guess we could ask the age-old question: what is los using?",
+      "revId": "8cfae67704bbf592890be25f82b1422028fe7447",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
