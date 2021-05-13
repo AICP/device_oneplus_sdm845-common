@@ -68,6 +68,23 @@
       "parentUuid": "2b8c2c9c_8074665c",
       "revId": "8cfae67704bbf592890be25f82b1422028fe7447",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3748967d_564f7493",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1393
+      },
+      "writtenOn": "2021-05-13T09:00:19Z",
+      "side": 1,
+      "message": "imo better to ship no package than a broken package, but I will leave this for you gents to agree (or not) on.",
+      "revId": "8cfae67704bbf592890be25f82b1422028fe7447",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
