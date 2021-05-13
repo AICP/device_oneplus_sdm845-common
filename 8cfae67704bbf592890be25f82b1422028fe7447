@@ -16,6 +16,23 @@
       "message": "confirmed builds, no jamesdsp APK.",
       "revId": "8cfae67704bbf592890be25f82b1422028fe7447",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c5fd823c_853460ba",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1375
+      },
+      "writtenOn": "2021-05-13T06:06:51Z",
+      "side": 1,
+      "message": "commit fits. only question is why. we did this on op7 because, we have opsoundtuner. If we remove it (and I\u0027n not against this), we ship no equalizer. do we want this?",
+      "revId": "8cfae67704bbf592890be25f82b1422028fe7447",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
