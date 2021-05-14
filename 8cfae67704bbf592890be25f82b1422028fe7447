@@ -85,6 +85,23 @@
       "message": "imo better to ship no package than a broken package, but I will leave this for you gents to agree (or not) on.",
       "revId": "8cfae67704bbf592890be25f82b1422028fe7447",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "62cef6c1_0e466842",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1393
+      },
+      "writtenOn": "2021-05-14T16:45:15Z",
+      "side": 1,
+      "message": "Please let me know gents if any objection, otherwise I will merge tomorrow so this is done before next Weekly.\n\nAs we prepare to remove jamesdsp globally, and package continues to be broken, this is something we could revisit later if the org determines a replacement package.",
+      "revId": "8cfae67704bbf592890be25f82b1422028fe7447",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
