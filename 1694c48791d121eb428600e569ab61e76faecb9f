@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "62c12dc3_beb9cf10",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1393
+      },
+      "writtenOn": "2021-05-22T14:25:13Z",
+      "side": 1,
+      "message": "As requested on XDA and Discord.",
+      "revId": "1694c48791d121eb428600e569ab61e76faecb9f",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
