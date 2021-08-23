@@ -167,10 +167,6 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     power.qcom:64
 
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePackages
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
