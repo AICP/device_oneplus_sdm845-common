@@ -79,7 +79,7 @@ ro.lmk.kill_timeout_ms=100
 ro.lmk.use_minfree_levels=true
 
 # Media
-media.settings.xml=/system/etc/media_profiles_vendor.xml
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
 # Perf
 ro.vendor.qti.core_ctl_max_cpu=4
