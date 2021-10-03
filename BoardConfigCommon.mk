@@ -95,6 +95,9 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 # LMKD
 TARGET_LMKD_STATS_LOG := true
 
+# HIDL
+DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/framework_manifest.xml
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
@@ -118,10 +121,6 @@ BOARD_ROOT_EXTRA_FOLDERS := op1 op2 op_odm
 
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
-
-# Shims
-TARGET_LD_SHIM_LIBS := \
-    /system/product/lib64/libdpmframework.so|libshim_dpmframework.so
 
 # Sepolicy
 include device/qcom/sepolicy/SEPolicy.mk

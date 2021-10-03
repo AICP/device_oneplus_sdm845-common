@@ -7,7 +7,8 @@ on post-fs
     chown system system /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,haptics@c000/leds/vibrator/vmax_mv_strong
 
 on boot
-    # Touchscreen
+   # Touchscreen
+    chmod 0660 /sys/devices/platform/soc/soc:goodix_fp/proximity_state
     chown system system /proc/touchpanel/double_tap_enable
     chmod 0660 /proc/touchpanel/double_tap_enable
 
@@ -60,7 +61,6 @@ on boot
     chown system system /sys/devices/soc/soc:fpc_fpc1020/key_disable
 
     # Fingerprint
-    chmod 0660 /sys/devices/platform/soc/soc:goodix_fp/proximity_state
     chown system system /sys/devices/platform/soc/soc:goodix_fp/proximity_state
 
     # OTG

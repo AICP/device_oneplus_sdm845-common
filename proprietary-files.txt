@@ -56,8 +56,6 @@ system_ext/lib/libmmparser_lite.so
 system_ext/lib64/libmmosal.so
 
 # NFC
--app/NxpNfcNci/NxpNfcNci.apk;OVERRIDES=NfcNci
--app/NxpSecureElement/NxpSecureElement.apk|129eaa26ac7e2b29006dc6514b94184f18152ec9
 etc/nfcee_access.xml
 -system_ext/app/NxpNfcNci/NxpNfcNci.apk;OVERRIDES=NfcNci
 -system_ext/app/NxpSecureElement/NxpSecureElement.apk
