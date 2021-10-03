@@ -36,7 +36,6 @@
 #include <libxml/parser.h>
 #include <libxml/tree.h>
 #include <string.h>
-#include <unistd.h>
 
 int parsePowerhintXML() {
     xmlDocPtr doc;
