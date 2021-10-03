@@ -51,6 +51,7 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 NEED_KERNEL_MODULE_SYSTEM := true
 TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_CONFIG := enchilada_defconfig
 TARGET_KERNEL_SOURCE := kernel/oneplus/sdm845
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_CUSTOM := true
@@ -95,6 +96,9 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 # LMKD
 TARGET_LMKD_STATS_LOG := true
 
+# HIDL
+DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/framework_manifest.xml
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
@@ -118,10 +122,6 @@ BOARD_ROOT_EXTRA_FOLDERS := op1 op2 op_odm
 
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
-
-# Shims
-TARGET_LD_SHIM_LIBS := \
-    /system/product/lib64/libdpmframework.so|libshim_dpmframework.so
 
 # Sepolicy
 include device/qcom/sepolicy/SEPolicy.mk
