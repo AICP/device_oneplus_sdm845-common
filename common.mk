@@ -113,10 +113,6 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.0 \
     vendor.display.config@2.0
 
-# DPM
-PRODUCT_PACKAGES += \
-    libshim_dpmframework
-
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport \
