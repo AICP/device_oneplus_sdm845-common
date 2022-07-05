@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9b4cfeba_64cb92d1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 492
+      },
+      "writtenOn": "2022-07-05T19:56:29Z",
+      "side": 1,
+      "message": "This requires a equivalent kernel change: https://github.com/dragonGR/kernel_oneplus_sdm845/commit/2b8e9a053f79d7b0af90356489cfcb84c8e0b312",
+      "revId": "4759743a78c3597d1f180adeb65b395e56360b56",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
