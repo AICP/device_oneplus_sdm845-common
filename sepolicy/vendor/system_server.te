@@ -33,3 +33,4 @@ allow system_server surfaceflinger:process getattr;
 allow system_server postinstall:process getattr;
 allow system_server mediametrics:process getattr;
 allow system_server gatekeeperd:process getattr;
+allow system_server permissioncontroller_app:process getattr;
