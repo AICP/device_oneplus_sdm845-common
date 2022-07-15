@@ -16,6 +16,41 @@
       "message": "It looks like this was missed... thoughts?\n",
       "revId": "e4d6d83d4ec8b856f9df2ea0458ddbeea3e3a00f",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fe25f6da_e40718d7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 343
+      },
+      "writtenOn": "2022-07-15T18:03:58Z",
+      "side": 1,
+      "message": "Comment removed by: Ralf Luther; Reason: solved for now",
+      "parentUuid": "8a74c502_6e7916dc",
+      "revId": "e4d6d83d4ec8b856f9df2ea0458ddbeea3e3a00f",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6bec8e55_fe2c913a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 343
+      },
+      "writtenOn": "2022-07-15T18:03:58Z",
+      "side": 1,
+      "message": "Comment removed by: Ralf Luther; Reason: not relevant, lol",
+      "revId": "e4d6d83d4ec8b856f9df2ea0458ddbeea3e3a00f",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
