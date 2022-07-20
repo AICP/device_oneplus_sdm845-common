@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1548809c_08f6e5d8",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 1782
+      },
+      "writtenOn": "2022-07-20T17:47:39Z",
+      "side": 0,
+      "message": "Why do we need this change if we are updating the vendor props?",
+      "revId": "1fab6161ebba1ebfd11f0c68151dc77c6074c996",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
