@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e7d402df_ad07f383",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 492
+      },
+      "writtenOn": "2022-07-22T00:17:39Z",
+      "side": 1,
+      "message": "In theory it should be enabled so diag_event and diag_log_packet can send to the userspace through netlink. One of the diag_events (which are sent to userspace) is data stall event. Witout it, again in theory, it would impact the data stall detection framework. But this has been disabled since in years in many devices and it has been found to be a resource-hogging.",
+      "revId": "64eebb471450111537c566136ffb6693b24593aa",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
