@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f6445cc5_d1dd94c3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 492
+      },
+      "writtenOn": "2022-07-22T00:20:59Z",
+      "side": 1,
+      "message": "Been my go-to commit since 3.10 days. Works fine and worked fine on my previous-owned 4.19 device.",
+      "revId": "4153631b6b8de63ea0db2848508523499f2747c9",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
