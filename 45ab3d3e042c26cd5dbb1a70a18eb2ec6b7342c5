@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ac879905_c3b81b88",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 492
+      },
+      "writtenOn": "2022-07-22T00:14:49Z",
+      "side": 1,
+      "message": "They don\u0027t exist in the latest version of OOS10 and neither in OOS beta",
+      "revId": "45ab3d3e042c26cd5dbb1a70a18eb2ec6b7342c5",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
