@@ -1,0 +1,12 @@
+[
+  {
+    "repository": "LineageOS/android_hardware_oneplus",
+    "target_path": "hardware/oneplus",
+    "branch":      "lineage-22.2"
+  },
+  {
+    "repository": "LineageOS/android_kernel_oneplus_sdm845",
+    "target_path": "kernel/oneplus/sdm845",
+    "branch":      "lineage-22.2"
+  }
+]
